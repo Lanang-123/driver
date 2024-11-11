@@ -4,19 +4,21 @@ import Features from '../components/Features';
 import Team from '../components/Team';
 import JoinUs from '../components/JoinUs';
 import Testimonials from '../components/Testimonials';
-import Newsletter from '../components/Newsletter';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Supporter from '../components/Supporter';
 
 function Home() {
     return (
         <div className="App flex flex-col min-h-screen">
             <Hero />
+            <Supporter />
             <Features />
             <Team />
             <JoinUs />
             <Testimonials />
-            <Newsletter />
-            <Footer />
+            <Contact />
+
         </div>
     );
 }

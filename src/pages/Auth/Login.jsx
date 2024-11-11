@@ -8,6 +8,7 @@ function Login() {
                 <div className="px-6 py-4">
                     <div className="flex justify-center mx-auto">
                         <img className="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt="" />
+                        {/* <h3 className="text-black text-3xl text-center font-bold">Driver</h3> */}
                     </div>
 
                     <h3 className="mt-3 text-xl md:text-2xl font-semibold text-center text-black ">Welcome Back</h3>

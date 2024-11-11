@@ -1,9 +1,10 @@
+// Contact.js
 import React from 'react';
 import { FaUser, FaEnvelope, FaComment } from 'react-icons/fa'; // import ikon
 
 function Contact() {
     return (
-        <section className="contact py-20 bg-teal-50 text-white">
+        <section id="contact" className="contact py-20 bg-teal-50 text-white">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl font-bold mb-8 text-center text-black">Contact Us</h2>
                 <form className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">

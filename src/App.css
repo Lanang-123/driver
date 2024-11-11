@@ -126,6 +126,10 @@ a.relative:hover::after {
     width: 100%;
 }
 
+a.relative.active::after {
+    width: 100%;
+}
+
 .sponsor-scroll {
   display: inline-block;
   animation: scroll-left 10s linear infinite;

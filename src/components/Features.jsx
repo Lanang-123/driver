@@ -1,5 +1,6 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Impor CSS Font Awesome
+import { Link } from 'react-router-dom';
 
 const Features = () => {
     return (
@@ -12,9 +13,9 @@ const Features = () => {
                     <p className="text-lg text-start text-gray-600 mb-8">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </p>
-                    <button className="bg-teal-800 hover:bg-teal-900 text-white px-6 py-3 rounded-full text-lg">
+                    <Link to={"/about"} className="bg-teal-800 hover:bg-teal-900 text-white px-6 py-3 rounded-full text-lg">
                         Learn More
-                    </button>
+                    </Link>
                 </div>
                 {/* Kolom Kedua */}
                 <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">

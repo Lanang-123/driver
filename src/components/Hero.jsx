@@ -1,9 +1,10 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Pastikan untuk mengimpor ini jika menggunakan npm
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <section className="hero bg-cover bg-center h-screen text-white flex flex-col items-start md:mx-32 mx-0 rounded-xl px-4 relative" style={{ backgroundImage: 'url("https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g")' }}>
+        <section className="hero bg-cover bg-center h-screen text-white flex flex-col items-start md:mx-32 mx-0 rounded-xl px-4 relative" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1482029255085-35a4a48b7084?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDcxfHx8ZW58MHx8fHx8")' }}>
             <div className="w-full md:max-w-lg text-left mb-8 mt-24 md:mt-48 md:ml-6">
                 <h1 className="font-bold mb-4"><span className='md:text-6xl text-5xl'>We always aim for the stars.</span></h1>
                 <p className="text-xl mb-8">Join us and discover the journey.</p>
@@ -37,7 +38,7 @@ const Hero = () => {
                         </h3>
                     </div>
                     <div className="max-w-md mt-4 md:mt-0 md:mr-12">
-                        <button className="bg-black hover:bg-black px-12 py-2 rounded-full text-md">Get Started</button>
+                        <Link to={"/auth/login"} className="bg-black hover:bg-black px-12 py-2 rounded-full text-md">Get Started</Link>
                     </div>
                 </div>
             </div>

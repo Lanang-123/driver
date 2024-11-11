@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const JoinUs = () => {
     return (
@@ -6,7 +7,9 @@ const JoinUs = () => {
             <div className="absolute inset-0 bg-black opacity-50"></div>
             <div className="relative mx-auto px-6 text-center z-10">
                 <h2 style={{ color: "white" }}>Join our team!</h2>
-                <button className=" text-white" style={{ backgroundColor: "teal", marginTop: "-20px" }}>Discover our team</button>
+                <Link to={"/auth/login"}>
+                    <button className=" text-white" style={{ backgroundColor: "teal", marginTop: "-20px" }}>Discover our team</button>
+                </Link>
             </div>
         </section>
     );

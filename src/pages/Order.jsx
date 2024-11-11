@@ -4,6 +4,15 @@ import { FaMapMarkerAlt, FaDollarSign, FaMap } from 'react-icons/fa';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 import Modal from 'react-modal';
 import 'leaflet/dist/leaflet.css';
+import Market from '../assets/images/mark2.png'
+
+// Icon for location marker
+const locationMarkerIcon = new L.Icon({
+    iconUrl: Market, // Path to your custom icon
+    iconSize: [25, 40],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+});
 
 // Icon for driver
 const greenMotorIcon = new L.Icon({
@@ -34,8 +43,9 @@ function LocationMarker({ setLocation, setAddress, position, setPosition }) {
     });
 
     return position === null ? null : (
-        <Marker position={position} />
+        <Marker position={position} icon={locationMarkerIcon} />
     );
+
 }
 
 function Order() {
